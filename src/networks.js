@@ -3,36 +3,36 @@
 
 module.exports = {
   bitcoin: {
-    messagePrefix: '\x18Bitcoin Signed Message:\n',
+    messagePrefix: '\x18Obsidian Signed Message:\n',
     bech32: 'bc',
     bip32: {
-      public: 0x0488b21e,
-      private: 0x0488ade4
+      public: 0x0488c21e,
+      private: 0x0488b2dd
     },
-    pubKeyHash: 0x00,
-    scriptHash: 0x05,
-    wif: 0x80
+    pubKeyHash: 0x4b,
+    scriptHash: 0x7d,
+    wif: 0xcb
   },
   regtest: {
-    messagePrefix: '\x18Bitcoin Signed Message:\n',
+    messagePrefix: '\x18Obsidian Signed Message:\n',
     bech32: 'bcrt',
     bip32: {
       public: 0x043587cf,
       private: 0x04358394
     },
-    pubKeyHash: 0x6f,
+    pubKeyHash: 0x73,
     scriptHash: 0xc4,
-    wif: 0xef
+    wif: 0xc1
   },
   testnet: {
-    messagePrefix: '\x18Bitcoin Signed Message:\n',
+    messagePrefix: '\x18Obsidian Signed Message:\n',
     bech32: 'tb',
     bip32: {
       public: 0x043587cf,
       private: 0x04358394
     },
-    pubKeyHash: 0x6f,
+    pubKeyHash: 0x73,
     scriptHash: 0xc4,
-    wif: 0xef
+    wif: 0xc1
   }
 }
