@@ -1,6 +1,6 @@
 {
   "name": "obsidianjs-lib",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Client-side Obsidian JavaScript library",
   "main": "./src/index.js",
   "engines": {

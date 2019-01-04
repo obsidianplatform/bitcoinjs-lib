@@ -1,24 +1,24 @@
-# BitcoinJS (bitcoinjs-lib)
-[![Build Status](https://travis-ci.org/bitcoinjs/bitcoinjs-lib.png?branch=master)](https://travis-ci.org/bitcoinjs/bitcoinjs-lib)
-[![NPM](https://img.shields.io/npm/v/bitcoinjs-lib.svg)](https://www.npmjs.org/package/bitcoinjs-lib)
+# ObsidianJS (obsidianjs-lib)
+[![Build Status](https://travis-ci.org/obsidianplatform/obsidianjs-lib.png?branch=master)](https://travis-ci.org/obsidianplatform/obsidianjs-lib)
+[![NPM](https://img.shields.io/npm/v/obsidianjs-lib.svg)](https://www.npmjs.org/package/obsidianjs-lib)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-A javascript Bitcoin library for node.js and browsers.
+A javascript Obsidian library for node.js and browsers.
 
 Released under the terms of the [MIT LICENSE](LICENSE).
 
 ## Should I use this in production?
 If you are thinking of using the *master* branch of this library in production, **stop**.
-Master is not stable; it is our development branch, and [only tagged releases may be classified as stable](https://github.com/bitcoinjs/bitcoinjs-lib/tags).
+Master is not stable; it is our development branch, and [only tagged releases may be classified as stable](https://github.com/obsidianplatform/obsidianjs-lib/tags).
 
 
 ## Can I trust this code?
 > Don't trust. Verify.
 
-We recommend every user of this library and the [bitcoinjs](https://github.com/bitcoinjs) ecosystem audit and verify any underlying code for its validity and suitability,  including reviewing any and all of your project's dependencies.
+We recommend every user of this library and the [ObsidianPlatform](https://github.com/obsidianplatform) ecosystem audit and verify any underlying code for its validity and suitability,  including reviewing any and all of your project's dependencies.
 
-Mistakes and bugs happen, but with your help in resolving and reporting [issues](https://github.com/bitcoinjs/bitcoinjs-lib/issues), together we can produce open source software that is:
+Mistakes and bugs happen, but with your help in resolving and reporting [issues](https://github.com/obsidianplatform/obsidianjs-lib/issues), together we can produce open source software that is:
 
 - Easy to audit and verify,
 - Tested, with test coverage >95%,
@@ -28,7 +28,7 @@ Mistakes and bugs happen, but with your help in resolving and reporting [issues]
 
 
 ## Documentation
-Presently,  we do not have any formal documentation other than our [examples](#examples), please [ask for help](https://github.com/bitcoinjs/bitcoinjs-lib/issues/new) if our examples aren't enough to guide you.
+Presently,  we do not have any formal documentation other than our [examples](#examples), please [ask for help](https://github.com/obsidianplatform/obsidianjs-lib/issues/new) if our examples aren't enough to guide you.
 
 
 ## Installation
@@ -108,39 +108,39 @@ The below examples are implemented as integration tests, they should be very eas
 Otherwise, pull requests are appreciated.
 Some examples interact (via HTTPS) with a 3rd Party Blockchain Provider (3PBP).
 
-- [Generate a random address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.js#L22)
-- [Import an address via WIF](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.js#L40)
-- [Generate a 2-of-3 P2SH multisig address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.js#L47)
-- [Generate a SegWit address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.js#L60)
-- [Generate a SegWit P2SH address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.js#L67)
-- [Generate a SegWit 3-of-4 multisig address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.js#L76)
-- [Generate a SegWit 2-of-2 P2SH multisig address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.js#L90)
-- [Support the retrieval of transactions for an address (3rd party blockchain)](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.js#L104)
-- [Generate a Testnet address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.js#L123)
-- [Generate a Litecoin address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.js#L133)
-- [Create a 1-to-1 Transaction](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/transactions.js#L13)
-- [Create a 2-to-2 Transaction](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/transactions.js#L28)
-- [Create (and broadcast via 3PBP) a typical Transaction](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/transactions.js#L47)
-- [Create (and broadcast via 3PBP) a Transaction with an OP\_RETURN output](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/transactions.js#L83)
-- [Create (and broadcast via 3PBP) a Transaction with a 2-of-4 P2SH(multisig) input](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/transactions.js#L105)
-- [Create (and broadcast via 3PBP) a Transaction with a SegWit P2SH(P2WPKH) input](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/transactions.js#L143)
-- [Create (and broadcast via 3PBP) a Transaction with a SegWit P2WPKH input](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/transactions.js#L174)
-- [Create (and broadcast via 3PBP) a Transaction with a SegWit P2PK input](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/transactions.js#L218)
-- [Create (and broadcast via 3PBP) a Transaction with a SegWit 3-of-4 P2SH(P2WSH(multisig)) input](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/transactions.js#L263)
-- [Verify a Transaction signature](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/transactions.js#L304)
-- [Import a BIP32 testnet xpriv and export to WIF](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/bip32.js#L12)
-- [Export a BIP32 xpriv, then import it](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/bip32.js#L20)
-- [Export a BIP32 xpub](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/bip32.js#L31)
-- [Create a BIP32, bitcoin, account 0, external address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/bip32.js#L40)
-- [Create a BIP44, bitcoin, account 0, external address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/bip32.js#L55)
-- [Create a BIP49, bitcoin testnet, account 0, external address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/bip32.js#L71)
-- [Use BIP39 to generate BIP32 addresses](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/bip32.js#L86)
-- [Create (and broadcast via 3PBP) a Transaction where Alice can redeem the output after the expiry (in the past)](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/cltv.js#L43)
-- [Create (and broadcast via 3PBP) a Transaction where Alice can redeem the output after the expiry (in the future)](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/cltv.js#L88)
-- [Create (and broadcast via 3PBP) a Transaction where Alice and Bob can redeem the output at any time](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/cltv.js#L144)
-- [Create (but fail to broadcast via 3PBP) a Transaction where Alice attempts to redeem before the expiry](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/cltv.js#L190)
+- [Generate a random address](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/addresses.js#L22)
+- [Import an address via WIF](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/addresses.js#L40)
+- [Generate a 2-of-3 P2SH multisig address](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/addresses.js#L47)
+- [Generate a SegWit address](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/addresses.js#L60)
+- [Generate a SegWit P2SH address](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/addresses.js#L67)
+- [Generate a SegWit 3-of-4 multisig address](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/addresses.js#L76)
+- [Generate a SegWit 2-of-2 P2SH multisig address](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/addresses.js#L90)
+- [Support the retrieval of transactions for an address (3rd party blockchain)](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/addresses.js#L104)
+- [Generate a Testnet address](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/addresses.js#L123)
+- [Generate a Litecoin address](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/addresses.js#L133)
+- [Create a 1-to-1 Transaction](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/transactions.js#L13)
+- [Create a 2-to-2 Transaction](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/transactions.js#L28)
+- [Create (and broadcast via 3PBP) a typical Transaction](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/transactions.js#L47)
+- [Create (and broadcast via 3PBP) a Transaction with an OP\_RETURN output](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/transactions.js#L83)
+- [Create (and broadcast via 3PBP) a Transaction with a 2-of-4 P2SH(multisig) input](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/transactions.js#L105)
+- [Create (and broadcast via 3PBP) a Transaction with a SegWit P2SH(P2WPKH) input](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/transactions.js#L143)
+- [Create (and broadcast via 3PBP) a Transaction with a SegWit P2WPKH input](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/transactions.js#L174)
+- [Create (and broadcast via 3PBP) a Transaction with a SegWit P2PK input](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/transactions.js#L218)
+- [Create (and broadcast via 3PBP) a Transaction with a SegWit 3-of-4 P2SH(P2WSH(multisig)) input](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/transactions.js#L263)
+- [Verify a Transaction signature](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/transactions.js#L304)
+- [Import a BIP32 testnet xpriv and export to WIF](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/bip32.js#L12)
+- [Export a BIP32 xpriv, then import it](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/bip32.js#L20)
+- [Export a BIP32 xpub](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/bip32.js#L31)
+- [Create a BIP32, bitcoin, account 0, external address](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/bip32.js#L40)
+- [Create a BIP44, bitcoin, account 0, external address](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/bip32.js#L55)
+- [Create a BIP49, bitcoin testnet, account 0, external address](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/bip32.js#L71)
+- [Use BIP39 to generate BIP32 addresses](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/bip32.js#L86)
+- [Create (and broadcast via 3PBP) a Transaction where Alice can redeem the output after the expiry (in the past)](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/cltv.js#L43)
+- [Create (and broadcast via 3PBP) a Transaction where Alice can redeem the output after the expiry (in the future)](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/cltv.js#L88)
+- [Create (and broadcast via 3PBP) a Transaction where Alice and Bob can redeem the output at any time](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/cltv.js#L144)
+- [Create (but fail to broadcast via 3PBP) a Transaction where Alice attempts to redeem before the expiry](https://github.com/obsidianplatform/obsidianjs-lib/blob/master/test/integration/cltv.js#L190)
 
-If you have a use case that you feel could be listed here, please [ask for it](https://github.com/bitcoinjs/bitcoinjs-lib/issues/new)!
+If you have a use case that you feel could be listed here, please [ask for it](https://github.com/obsidianplatform/obsidianjs-lib/issues/new)!
 
 
 ## Contributing
@@ -170,10 +170,8 @@ npm run-script coverage
 - [minimaldata](https://github.com/bitcoinjs/minimaldata) - A module to check bitcoin policy: SCRIPT_VERIFY_MINIMALDATA
 
 
-## Alternatives
-- [BCoin](https://github.com/indutny/bcoin)
-- [Bitcore](https://github.com/bitpay/bitcore)
-- [Cryptocoin](https://github.com/cryptocoinjs/cryptocoin)
+## Special Thanks
+Special thanks goes towards the [bitcoinjs](https://github.com/bitcoinjs) community and their amazing effort to build useful tools that can work alongside the Bitcoin protocol.
 
 
 ## LICENSE [MIT](LICENSE)
