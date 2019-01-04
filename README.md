@@ -33,7 +33,7 @@ Presently,  we do not have any formal documentation other than our [examples](#e
 
 ## Installation
 ``` bash
-npm install bitcoinjs-lib
+npm install @obsidian/obsidianjs-lib
 ```
 
 Typically we support the [Node Maintenance LTS version](https://github.com/nodejs/Release).

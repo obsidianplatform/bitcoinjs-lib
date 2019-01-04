@@ -1,10 +1,13 @@
 {
-  "name": "obsidianjs-lib",
-  "version": "5.0.1",
+  "name": "@obsidian/obsidianjs-lib",
+  "version": "5.0.2",
   "description": "Client-side Obsidian JavaScript library",
   "main": "./src/index.js",
   "engines": {
     "node": ">=8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "obsidianjs",
